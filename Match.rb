@@ -24,7 +24,7 @@ class Match
       Round.new(@active_player).query
       if @active_player.lives == 0
         swap_player
-        puts "Congrats!" + @active_player.name + ", You are the Winner!"
+        puts "Congrats! " + @active_player.name + ", You are the Winner!"
         puts "Game Over!"
         @living = false
       end

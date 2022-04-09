@@ -13,13 +13,11 @@ class Round
   def query
     puts @player.name + ": " + @quiz.question
     @player_answer = $stdin.gets.chomp.to_i
-    puts @player_answer
-    puts @quiz.answer
     if @player_answer == @quiz.answer
       puts "Correct!"
     end
     if @player_answer != @quiz.answer
-      puts "Nope, I'm sorry!"
+      puts "Nope, I'm sorry! The correct answer was: " + @quiz.answer.to_s
       @player.reduce_life
     end
     puts @player.lives.to_s + " lives remaining."
