@@ -15,5 +15,7 @@ end
 #testing
 # player = "Steven"
 # @new_player = Player.new(player)
+# puts @new_player.lives
 # puts @new_player.name
+# @new_player.reduce_life
 # puts @new_player.lives
